@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:20px">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>demo</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.12/vue.min.js"></script>
+</head>
+<body>
+     <style>
+         
+         .foo{
+             font-size:1.4rem
+         }
+     </style>
+
+     <ul id="app">
+         <li>
+            <div v-for="(item, index) in 100" :key="index" class="foo">我是中国人</div>
+
+         </li>
+     </ul>
+
+
+     <script>
+
+         new Vue({
+             el:'#app'
+         })
+     </script>
+
+</body>
+</html>
